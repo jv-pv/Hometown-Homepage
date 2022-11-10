@@ -398,6 +398,11 @@ h4 {
 
 /* iPhone SE */
 @media only screen and (max-width:375px) {
+
+    #hero-title2 {
+        font-size: 1.4rem;
+    }
+
     #to-do-flex-container > .flex-itm {
         margin: 20px;
     }
