@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+
+:root {
+    --color1: #0C1B1A;
+    --color2: #35362B;
+    --color3: #7C6E64;
+    --color4: #0A1817;
+    --text-color: #FFE8DF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Manrope, sans-serif;
+    overflow-x: auto;
+    text-align: center;
+    font-size: 10px;
+}
+
+
+/* Hero */
+
+#hero-container {
+    background-image: url(images/ElMorroSanJuan05.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 394px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-title1 {
+    font-size: 1.7em;
+    color: var(--text-color);
+    width: 340px;
+    height: 50px;
+    background-color: var(--color1);
+    border-radius: 15px;
+    margin: 0;
+    box-shadow: 0px 0px 5px inset black;
+
+}
+
+
+#hero-title2 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    text-align: center;
+    width: 450px;
+    height: 55px;
+    background-color: var(--color3);
+    border-radius: 10px;
+    padding: 15px 29px 0px 29px ;
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px inset black;
+
+}
+
+/* Activites */
+
+h4 {
+    margin: 0;
+}
+
+#to-do-container {
+    background-color: #efefef;
+    width: 100vw;
+    height: 500px;
+    color: var(--color4);
+    text-shadow: 0px 0px 2px whitesmoke;
+    box-shadow: 0px 0px 5px inset black;
+    overflow: scroll;
+}
+
+
+#to-do-heading {
+    font-size: 3rem;
+    padding: 40px 140px;
+    /* white-space: nowrap; */
+}
+
+#to-do-flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.flex-itm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 4);
+}
+
+.img-to-do {
+    object-fit: cover;
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: solid;
+}
+
+.flex-itm >h5 {
+    font-size: 1.7rem;
+    margin: 0;
+    padding: 10px;
+    background: #FFE8DF;
+    box-shadow: 0px 0px 10px inset black;
+    border-radius: 20px;
+    color: var(--color1);
+    text-shadow: 0px 0px 1px var(--color4);
+}
+
+.flex-itm > p {
+    letter-spacing: 1.5px;
+    line-height: 18px;
+    font-size: 1.5rem;
+    height: 10rem;
+    margin-top: 10px;
+    color: #0A1817;
+}
+
+
+#Digital-Business-Card-Container {
+    width: 100vw;
+    height: 500px;
+    background: linear-gradient(135deg, hsla(176, 38%, 8%, 1) 0%, hsla(230, 19%, 75%, 1) 100%);
+    margin: 0;
+    display: flex; 
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;    
+}
+
+/* #Digital-Business-Card >iframe {
+    width: 500px;
+    height: 300px;
+    border: unset;
+} */
+
+#Digital-Business-Card-Container >h2 {
+    margin-bottom: 40px;
+    font-size: 2.6rem;
+    color: #FFE8DF;
+    background: var(--color3);
+    padding: 10px;
+    width: 200px;
+    border-radius: 25px;
+    font-style: italic;
+    box-shadow: 0px 0px 10px inset black;
+
+}
+
+.avatar {
+    width: 150px;
+    border: 1px double #162727;
+    box-shadow: 0 0 10px wheat;
+    border-radius: 10px;
+    border: 1px ridge black;
+}
+
+.avatar:hover {
+    animation: tilt-shaking 0.50s infinite;
+}
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(1deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-1deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    text-shadow: -2px 1px black;
+    box-shadow: inset 0 0 10px #c89c26;
+    background: #162727;
+    color: white;
+    border-top: 3px ridge palevioletred;
+    border-right: 3px ridge palevioletred;
+    border-bottom: 3px ridge palevioletred;
+    border-left: 3px ridge palevioletred;
+    border-radius: 15px;
+    background-image: url(images/color2.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.text {
+    font-size: 1.5rem;
+    font-family: Manrope;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-left: 20px;
+}
+
+.text >h3:hover{
+    background: linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%);
+    border-radius: 5px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+ 
+ .text >p:hover{
+    background: linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%);
+    border-radius: 5px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+ 
+ .text >h4:hover{
+    background: linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%);
+    border-radius: 5px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+
+
+
+
+
+/* iPhone 8 */
+@media only screen and (max-width:700px) {
+
+    #hero-container {
+        background-image: url(images/ElMorroSanJuan05.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 394px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #hero-title1 {
+        font-size: 1.2em;
+        color: var(--text-color);
+        text-align: center;
+        width: 200px;
+        height: 42px;
+        background-color: var(--color1);
+        border-radius: 10px;
+        padding: 4px 11px 0px 15px;
+        margin: 0;
+        box-shadow: 0px 0px 5px inset black;
+    
+    }
+    
+    
+    #hero-title2 {
+        font-size: 1.5rem;
+        color: var(--text-color);
+        text-align: center;
+        width: 300px;
+        height: 62px;
+        background-color: var(--color3);
+        border-radius: 10px;
+        padding: 6px 29px 0px 29px ;
+        margin-top: 11px;
+        box-shadow: 0px 0px 5px inset black;
+    
+    }
+
+    #to-do-container {
+        width: 100vw;
+        height: 1250px;
+        text-shadow: 0px 0px 2px whitesmoke;
+        box-shadow: 0px 0px 5px inset black;
+        overflow: scroll;
+    }
+    
+    
+    #to-do-heading {
+        font-size: 3rem;
+        padding: 40px 0;
+        /* white-space: nowrap; */
+    }
+    
+    #to-do-flex-container {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 10px;
+        justify-content: space-around;
+        align-content: center;
+    }
+    
+    .flex-itm {
+        width: calc(100% / 3);
+        flex-wrap: nowrap;
+
+    }
+    
+    .img-to-do {
+        object-fit: cover;
+        display: block;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        border: solid;
+    }
+    
+    .flex-itm >h5 {
+        font-size: 1.7rem;
+        margin: 0;
+        padding: 10px 20px;
+        background: #FFE8DF;
+        border-radius: 20px;
+    }
+    
+    .flex-itm > p {
+        letter-spacing: 1.5px;
+        line-height: 18px;
+        font-size: 1.4rem;
+        height: 10rem;
+        margin-top: 20px;
+    }
+
+
+    .card {
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        text-shadow: -2px 1px black;
+        box-shadow: inset 0 0 10px #c89c26;
+        background: #162727;
+        color: white;
+        border-top: 3px ridge palevioletred;
+        border-right: 3px ridge palevioletred;
+        border-bottom: 3px ridge palevioletred;
+        border-left: 3px ridge palevioletred;
+        border-radius: 15px;
+        background-image: url(images/color2.png);
+        background-position: center;
+        background-size: contain;
+    }
+
+    .text {
+        font-size: 0.90rem;
+        line-height: 20px;
+        white-space: nowrap;
+    }
+
+    .avatar {
+        width: 100px;
+    }
+}
+
+
+@media only screen and (max-width: 414px) {
+
+    #to-do-container {
+        width: 100vw;
+        height: 1450px;
+    }
+
+    #to-do-heading >h4 {
+        font-size: 2.4rem;
+        padding: 0px 5px;
+    }
+
+    .flex-itm {
+        flex-wrap: nowrap;
+        margin: 20px auto;
+    }
+}
+
+
+/* iPhone SE */
+@media only screen and (max-width:375px) {
+    #to-do-flex-container > .flex-itm {
+        margin: 20px;
+    }
+
+    #to-do-container {
+        width: 100vw;
+        height: 1560px;
+    }
+}
+
+@media only screen and (max-width:280px) {
+
+    #hero-title2 {
+        width: 180px;
+        height: 110px;
+    }
+
+    #to-do-flex-container > .flex-itm {
+        margin: 0px 0px 70px;
+    }
+
+    #to-do-container {
+        width: 100vw;
+        height: 1690px;
+    }
+
+    #Digital-Business-Card-Container >h2 {
+        font-size: 2rem;
+        width: 150px;
+    }
+
+    .card {
+        width: 200px;
+    }
+
+    .text {
+        font-size: 0.60rem;
+        line-height: 20px;
+        white-space: nowrap;
+    }
+
+    .avatar {
+        width: 60px;
+    }
+
+}
