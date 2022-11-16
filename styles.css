@@ -299,7 +299,7 @@ h4 {
 
 
 /* iPhone 8 */
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:667px) {
 
     #hero-container {
         background-image: url(images/ElMorroSanJuan05.jpg);
@@ -321,19 +321,25 @@ h4 {
         height: 42px;
         background-color: var(--color1);
         border-radius: 10px;
-        padding: 9px 15px 0px 10px;
+        padding: 9px 15px 35px 10px;
         margin: 0;
         box-shadow: 0px 0px 5px inset black;
     
     }
     
-    
+
+    /* #hero-title2 {
+        width: 300px;
+        height: 100px;
+        font-size: 4.5vw;
+    } */ 
+
     #hero-title2 {
         font-size: 1.5rem;
         color: var(--text-color);
         text-align: center;
         width: 300px;
-        height: 62px;
+        height: 100px;
         background-color: var(--color3);
         border-radius: 10px;
         padding: 6px 29px 0px 29px ;
