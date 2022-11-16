@@ -472,6 +472,7 @@ h4 {
     #hero-title2 {
         width: 180px;
         height: 13vh;
+        font-size: 1.4rem;
     }
 
     li > a {
