@@ -25,16 +25,74 @@ body, html {
 
 /* Hero */
 
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 60px;
+    background-color: #efefef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 5px inset black ;
+}
+
+#logo {
+    font-size: 30px;
+    margin: 0px 10px;
+    background: linear-gradient(90deg, hsla(176, 38%, 8%, 1) 0%, hsla(230, 19%, 75%, 1) 100%);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 3px inset blue;
+}
+
+#logo > a {
+    text-decoration: none;
+}
+
+nav {
+    width: 50%;
+    height: 60px;
+    max-width: 300px;
+}
+
+nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 57px;
+    /* margin-block: 0; */
+    /* padding-inline-start: 0; */
+}
+
+nav > ul > li {
+    list-style: none;
+}
+
+li > a {
+    text-decoration: unset;
+    color: #0A1817;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    margin: 10px;
+}
+
 #hero-container {
     background-image: url(images/ElMorroSanJuan05.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 394px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 0;
+    position: relative;
+    top: 20px;
+    box-shadow: 0 0 5px black;
 }
 
 #hero-title1 {
@@ -45,8 +103,8 @@ body, html {
     background-color: var(--color1);
     border-radius: 15px;
     margin: 0;
+    padding-top: 6px;
     box-shadow: 0px 0px 5px inset black;
-
 }
 
 
@@ -117,7 +175,7 @@ h4 {
 .flex-itm >h5 {
     font-size: 1.7rem;
     margin: 0;
-    padding: 10px;
+    padding: 15px;
     background: #FFE8DF;
     box-shadow: 0px 0px 10px inset black;
     border-radius: 20px;
@@ -240,9 +298,6 @@ h4 {
  }
 
 
-
-
-
 /* iPhone 8 */
 @media only screen and (max-width:700px) {
 
@@ -266,7 +321,7 @@ h4 {
         height: 42px;
         background-color: var(--color1);
         border-radius: 10px;
-        padding: 4px 11px 0px 15px;
+        padding: 9px 15px 0px 10px;
         margin: 0;
         box-shadow: 0px 0px 5px inset black;
     
@@ -398,11 +453,6 @@ h4 {
 
 /* iPhone SE */
 @media only screen and (max-width:375px) {
-
-    #hero-title2 {
-        font-size: 1.4rem;
-    }
-
     #to-do-flex-container > .flex-itm {
         margin: 20px;
     }
