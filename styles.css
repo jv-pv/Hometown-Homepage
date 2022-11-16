@@ -464,6 +464,20 @@ h4 {
 
 /* iPhone SE */
 @media only screen and (max-width:375px) {
+
+    #hero-title1 {
+        padding-bottom: 35px;
+    }
+
+    #hero-title2 {
+        width: 180px;
+        height: 110px;
+    }
+
+    li > a {
+        font-size: 10px;
+    }
+
     #to-do-flex-container > .flex-itm {
         margin: 20px;
     }
@@ -475,6 +489,7 @@ h4 {
 
     nav > ul {
         flex-direction: column;
+        flex-wrap: wrap;
     }
 }
 
